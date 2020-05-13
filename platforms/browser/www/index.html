@@ -34,7 +34,7 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    <title>PhoneGap</title>
+    <title>Deliciaya.com</title>
 
 </head>
 
@@ -46,25 +46,13 @@
 
     <!-- /header -->
         <div data-role="header">
-            <h1>Bienvenidos</h1>
+            <img style="position:relative;" src="img/hamburguesas.jpg" width="100%">
             <a class="ui-alt-icon" href="#nav-panel1" data-icon="bars" data-iconpos="notext">Menu</a>
-        </div>
-    <!-- /header -->
-
-    <!-- /panel -->
-        <div data-role="panel" data-display="push" data-theme="a" id="nav-panel1">
-            <ul class="ui-alt-icon" data-role="listview">
-                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br>
-                <li><a href="#inicio" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Inicio</a></li>
-                <li><a href="#valores" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Valores</a></li>
-                <li><a href="#deberes" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Deberes</a></li>
-            </ul>
-        </div>
-    <!-- /panel -->
-
+            <h1 style="position: absolute; top: 0px; margin-left: 56px;">Bienvenidos a Deliciaya.com</h1>
+            
     <!-- /content-->
-        <div role="main" class="ui-content jqm-content jqm-fullwidth">
-            <img src="img/bienvendos.png" width="100%">
+        <div role="main" class="jqm-content jqm-fullwidth">
+           <h1 style="position: fixed; top: 20%;">Disfruta nuestras deliciosas hamburguesas unicas.</h1> 
         </div>
     <!-- /content -->
 
@@ -76,17 +64,31 @@
         </div>
     <!-- /footer -->
 
+        </div>
+    <!-- /header -->
+
+    <!-- /panel -->
+        <div data-role="panel" data-display="push" data-theme="a" id="nav-panel1">
+            <ul class="ui-alt-icon" data-role="listview">
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br>
+                <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
+                <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
+                <li><a href="#page4" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Adicionales</a></li>
+            </ul>
+        </div>
+    <!-- /panel -->
+
  </div>
 <!-- End of first page -->
 
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <!-- Start of second page -->
- <div class="ui-page-theme-a" data-role="page" id="inicio">
+ <div class="ui-page-theme-a" data-role="page" id="page2">
 
     <!-- /header -->
         <div data-role="header">
-            <h1>Inicio</h1>
+            <h1>Hamburguesas</h1>
             <a class="ui-alt-icon" href="#nav-panel2" data-icon="bars" data-iconpos="notext">Menu</a>
         </div>
     <!-- /header -->
@@ -96,9 +98,9 @@
             <ul class="ui-alt-icon" data-role="listview">
                 <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
-                <li><a href="#inicio" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Inicio</a></li>
-                <li><a href="#valores" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Valores</a></li>
-                <li><a href="#deberes" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Deberes</a></li>
+                <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
+                <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
+                <li><a href="#page4" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Adicionales</a></li>
             </ul>
         </div>
     <!-- /panel -->
@@ -114,28 +116,82 @@
 
     <!-- /content-->
         <div role="main" class="ui-content">
-            <img src="img/inicio.png" width="100%">
 
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
-                 <h4>Definición</h4>
-                    <p>Del latín initium, inicio es un término que puede 
-                    utilizarse como sinónimo de comienzo. 
-                    Se trata del principio, el origen o la 
-                    raíz de algo. Por ejemplo: “Esta inauguración 
-                    supone el inicio de nuestra expansión a todo el 
-                    continente americano”, “Un golpe de puño del jugador 
-                    italiano marcó el inicio de una pelea generalizada 
-                    que dejó tres heridos”, “No estoy entendiendo nada: 
-                    voy a tener que volver a leer desde el inicio”.</p>
-            </div><br>
-            <a href="#page1">Pagina principal</a>
+                <h4>Hamburguesas saludables</h4>
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la segemos.</h3>
+                        <div style="float:left; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Zanahoria.</li>
+                                <li>Rabanos.</li>
+                                <li>Pepinillos.</li>
+                                <b>Precio: $12.000</b>
+                        </div><br><br>
+                        <img src="img/1.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la sintrigal.</h3>
+                        <div style="float:right; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Avena.</li>
+                                <li>Trigo.</li>
+                                <li>Cereal.</li>
+                                <b>Precio: $15.000</b>
+                        </div><br><br>            
+                        <img src="img/2.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la solume.</h3>
+                    <div style="float:left; margin:10px;">
+                        <h4>Contenido:</h4>
+                            <li>Gluten.</li>
+                            <li>Berengena.</li>
+                            <li>Berengena.</li>
+                            <li>Berengena.</li>
+                            <li>tofu.</li>
+                            <b>Precio: $25.000</b>
+                    </div><br><br>            
+                    <img src="img/3.jpg" style="width:50%;height:50%"><br><br><br><br>
+            </div>
+
+            <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
+                <h4>Hamburguesas glotones</h4>
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la glotun.</h3>
+                        <div style="float:left; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Zanahoria.</li>
+                                <li>Rabanos.</li>
+                                <li>Pepinillos.</li>
+                                <b>Precio: $12.000</b>
+                        </div><br><br>
+                        <img src="img/4.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la glosen.</h3>
+                        <div style="float:right; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Avena.</li>
+                                <li>Trigo.</li>
+                                <li>Cereal.</li>
+                                <b>Precio: $15.000</b>
+                        </div><br><br>            
+                        <img src="img/5.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la grangler.</h3>
+                    <div style="float:left; margin:10px;">
+                        <h4>Contenido:</h4>
+                            <li>Gluten.</li>
+                            <li>Berengena.</li>
+                            <li>tofu.</li>
+                            <b>Precio: $25.000</b>
+                    </div><br><br>            
+                    <img src="img/6.jpg" style="width:50%;height:50%"><br><br>
+            </div>
+            <a href="#page1">Regresar</a>
         </div>
     <!-- /content -->
 
     <!-- /footer -->
         <div class="ui-alt-icon" data-role="footer">
             <h5>Visita este proyecto en GitHub.
-                <a href="https://github.com/saulriver/phonegap" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"></a>
+                <a href="https://github.com/saulriver/phonegap" target="_blank" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"></a>
             </h5>
         </div>
     <!-- /footer -->
@@ -146,11 +202,11 @@
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <!-- Start of third page -->
- <div class="ui-page-theme-a" data-role="page" id="valores">
+ <div class="ui-page-theme-a" data-role="page" id="page3">
 
     <!-- /header -->
         <div data-role="header">
-            <h1>Valores</h1>
+            <h1>Bebidas</h1>
             <a class="ui-alt-icon" href="#nav-panel3" data-icon="bars" data-iconpos="notext">Menu</a>
         </div>
     <!-- /header -->
@@ -160,9 +216,9 @@
             <ul class="ui-alt-icon" data-role="listview">
                 <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
-                <li><a href="#inicio" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Inicio</a></li>
-                <li><a href="#valores" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Valores</a></li>
-                <li><a href="#deberes" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Deberes</a></li>
+                <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
+                <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
+                <li><a href="#page4" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Adicionales</a></li>
             </ul>
         </div>
     <!-- /panel -->
@@ -177,16 +233,79 @@
 
     <!-- /content -->
         <div role="main" class="ui-content">
-            <img src="img/valores.png" width="100%">
-
+        <!-- /content desplegable -->
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
-                 <h4>Definición</h4>
-                    <p>Los valores son aquellos principios, virtudes o cualidades 
-                    que caracterizan a una persona, una acción o un objeto 
-                    que se consideran típicamente positivos o de gran 
-                    importancia por un grupo social.</p>
+                <h4>Bebidas saludables</h4>
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la segemos.</h3>
+                        <div style="float:left; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Zanahoria.</li>
+                                <li>Rabanos.</li>
+                                <li>Pepinillos.</li>
+                                <b>Precio: $12.000</b>
+                        </div><br><br>
+                        <img src="img/7.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la sintrigal.</h3>
+                        <div style="float:right; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Avena.</li>
+                                <li>Trigo.</li>
+                                <li>Cereal.</li>
+                                <b>Precio: $15.000</b>
+                        </div><br><br>            
+                        <img src="img/8.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la solume.</h3>
+                    <div style="float:left; margin:10px;">
+                        <h4>Contenido:</h4>
+                            <li>Gluten.</li>
+                            <li>Berengena.</li>
+                            <li>Berengena.</li>
+                            <li>Berengena.</li>
+                            <li>tofu.</li>
+                            <b>Precio: $25.000</b>
+                    </div><br><br>             
+                    <img src="img/9.jpg" style="width:50%;height:50%"><br><br><br><br><br><br>
             </div><br>
-            <a href="#inicio">Regresar a inicio</a>
+        <!-- /fin content desplegable -->
+
+        <!-- /content desplegable -->
+            <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
+                <h4>Bebidas glotones</h4>
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la glotun.</h3>
+                        <div style="float:left; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Zanahoria.</li>
+                                <li>Rabanos.</li>
+                                <li>Pepinillos.</li>
+                                <b>Precio: $12.000</b>
+                        </div><br><br>
+                        <img src="img/10.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la glosen.</h3>
+                        <div style="float:right; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Avena.</li>
+                                <li>Trigo.</li>
+                                <li>Cereal.</li>
+                                <b>Precio: $15.000</b>
+                        </div><br><br>           
+                        <img src="img/11.jpg" style="width:50%;height:50%"><br><br><br> 
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la grangler.</h3>
+                    <img src="img/12.jpg" style="width:50%;height:50%">
+                    <div style="float:left; margin:10px;">
+                        <h4>Contenido:</h4>
+                            <li>Gluten.</li>
+                            <li>Berengena.</li>
+                            <li>tofu.</li>
+                            <b>Precio: $25.000</b>
+                    </div>     
+            </div><br>
+        <!-- /fin content desplegable -->
+
+            <a href="#page2">Regresar</a>
         </div>
     <!-- /content -->
 
@@ -204,11 +323,11 @@
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <!-- Start of fourth page -->
- <div class="ui-page-theme-a" data-role="page" id="deberes">
+ <div class="ui-page-theme-a" data-role="page" id="page4">
 
     <!-- /header -->
         <div data-role="header">
-            <h1>Deberes</h1>
+            <h1>Adicionales</h1>
             <a class="ui-alt-icon" href="#nav-panel4" data-icon="bars" data-iconpos="notext">Menu</a>
         </div>
     <!-- /header -->
@@ -218,9 +337,9 @@
             <ul class="ui-alt-icon" data-role="listview">
                 <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
-                <li><a href="#inicio" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Inicio</a></li>
-                <li><a href="#valores" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Valores</a></li>
-                <li><a href="#deberes" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Deberes</a></li>
+                <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
+                <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
+                <li><a href="#page4" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Adicionales</a></li>
             </ul>
         </div>
     <!-- /panel -->
@@ -235,20 +354,74 @@
 
     <!-- /content -->
         <div role="main" class="ui-content">
-            <img src="img/deberes.jpg" width="100%">
+            <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
+                <h4>Adicionales saludables</h4>
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la segemos.</h3>
+                        <div style="float:left; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Zanahoria.</li>
+                                <li>Rabanos.</li>
+                                <li>Pepinillos.</li>
+                                <b>Precio: $12.000</b>
+                        </div><br><br>
+                        <img src="img/1.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la sintrigal.</h3>
+                        <div style="float:right; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Avena.</li>
+                                <li>Trigo.</li>
+                                <li>Cereal.</li>
+                                <b>Precio: $15.000</b>
+                        </div><br><br>            
+                        <img src="img/2.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la solume.</h3>
+                    <div style="float:left; margin:10px;">
+                        <h4>Contenido:</h4>
+                            <li>Gluten.</li>
+                            <li>Berengena.</li>
+                            <li>Berengena.</li>
+                            <li>Berengena.</li>
+                            <li>tofu.</li>
+                            <b>Precio: $25.000</b>
+                    </div><br><br>            
+                    <img src="img/3.jpg" style="width:50%;height:50%">
+            </div><br>
 
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
-              <h4>Definición</h4>
-                <p>Se denomina deber o deberes a la responsabilidad de un individuo 
-                frente a otro, aunque este otro puede ser una persona física 
-                (un par) o una persona jurídica (empresa, organización), 
-                incluso el mismo Estado. El deber siempre es establecido 
-                de manera previa a contraer la responsabilidad, y espera 
-                del individuo una conducta o una acción que favorezca su
-                 cumplimiento. Caso contrario, existe en cualquier caso, 
-                 la sanción o castigo por haber incumplido dichas responsabilidades.</p>
+                <h4>Adicionales glotones</h4>
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la glotun.</h3>
+                        <div style="float:left; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Zanahoria.</li>
+                                <li>Rabanos.</li>
+                                <li>Pepinillos.</li>
+                                <b>Precio: $12.000</b>
+                        </div><br><br>
+                        <img src="img/4.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la glosen.</h3>
+                        <div style="float:right; margin:10px;">
+                            <h4>Contenido:</h4>
+                                <li>Avena.</li>
+                                <li>Trigo.</li>
+                                <li>Cereal.</li>
+                                <b>Precio: $15.000</b>
+                        </div><br><br>            
+                        <img src="img/5.jpg" style="width:50%;height:50%"><br><br><br>
+
+                    <h3 style="text-align: left;">Disfruta del rico sabor de la grangler.</h3>
+                    <div style="float:left; margin:10px;">
+                        <h4>Contenido:</h4>
+                            <li>Gluten.</li>
+                            <li>Berengena.</li>
+                            <li>tofu.</li>
+                            <b>Precio: $25.000</b>
+                    </div><br><br>            
+                    <img src="img/6.jpg" style="width:50%;height:50%">
             </div><br>
-            <a href="#valores">Regresar a valores</a>
+            <a href="#page3">Regresar</a>
         </div>
     <!-- /content -->
 
@@ -264,6 +437,9 @@
 <!-- End of fourth page -->
 
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">app.initialize();</script>
 
 </body>
 
