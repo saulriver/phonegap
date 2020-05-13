@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="themes/1.4.5.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="js/jquery.mobile.structure-1.4.5.min.css" />
+
+    <script src="css/jquery.mobile-1.4.5.min.css"></script>
+
+    <title>PhoneGap</title>
+
+</head>
+
+<body>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Start of first page -->
+ <div class="ui-page-theme-a jqm-demos ui-responsive-panel" data-role="page" id="page1">
+
+    <!-- /header -->
+        <div data-role="header">
+            <h1>Bienvenidos</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+    <!-- /header -->
+
+    <!-- /panel -->
+        <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#deberes">Deberes</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+
+    <!-- /content-->
+        <div role="main" class="ui-content jqm-content jqm-fullwidth">
+            <img src="img/bienvendos.png" width="100%">
+        </div>
+    <!-- /content -->
+
+    <!-- /footer -->
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+    <!-- /footer -->
+
+ </div>
+<!-- End of first page -->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Start of second page -->
+ <div class="ui-body-b" data-role="page" id="inicio">
+
+    <!-- /header -->
+        <div data-role="header">
+            <h1>Inicio</h1>
+        </div>
+    <!-- /header -->
+
+    <!-- /navbar -->
+        <div data-role="content">
+            <ul data-role="listview">
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#deberes">Deberes</a></li>
+            </ul>
+        </div>
+    <!-- /navbar -->
+
+    <!-- /content-->
+        <div role="main" class="ui-content">
+            <div class="article">
+                <p><img src="img/inicio.png" width="100%"></p>
+                <p>Del latín initium, inicio es un término que puede 
+                    utilizarse como sinónimo de comienzo. 
+                    Se trata del principio, el origen o la 
+                    raíz de algo. Por ejemplo: “Esta inauguración 
+                    supone el inicio de nuestra expansión a todo el 
+                    continente americano”, “Un golpe de puño del jugador 
+                    italiano marcó el inicio de una pelea generalizada 
+                    que dejó tres heridos”, “No estoy entendiendo nada: 
+                    voy a tener que volver a leer desde el inicio”.</p>
+                <p>Ver página interna llamada. <a href="#page1">Pagina principal</a></p>
+            </div>
+        </div>
+    <!-- /content -->
+
+    <!-- /footer -->
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+    <!-- /footer -->
+
+ </div>
+<!-- End of second page -->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Start of third page -->
+ <div class="ui-body-b" data-role="page" id="valores">
+
+    <!-- /header -->
+        <div data-role="header">
+            <h1>Valores</h1>
+        </div>
+    <!-- /header -->
+
+    <!-- /navbar -->
+        <div data-role="content">
+            <ul data-role="listview">
+                <li><a href="#deberes">Deberes</a></li>
+            </ul>
+        </div>
+    <!-- /navbar -->
+
+    <!-- /content -->
+        <div role="main" class="ui-content">
+            <img src="img/valores.png" width="100%">
+            <p>Los valores son aquellos principios, virtudes o cualidades 
+                que caracterizan a una persona, una acción o un objeto 
+                que se consideran típicamente positivos o de gran 
+                importancia por un grupo social.
+            </p>
+            <p>Ver página interna llamada.<a href="#inicio">Regresar a inicio</a></p>
+        </div>
+    <!-- /content -->
+
+    <!-- /footer -->
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+    <!-- /footer -->
+
+ </div>
+<!-- End of third page -->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Start of fourth page -->
+ <div class="ui-body-b" data-role="page" id="deberes">
+
+    <!-- /header -->
+        <div data-role="header">
+            <h1>Deberes</h1>
+        </div>
+    <!-- /header -->
+
+    <!-- /navbar -->
+        <div data-role="content">
+            <ul data-role="listview">
+                <li class="ui-icon-home ui-btn-icon-right"><a href="#page1">Pagina principal</a></li>
+            </ul>
+        </div>
+    <!-- /navbar -->
+
+    <!-- /content -->
+        <div role="main" class="ui-content">
+            <img src="img/deberes.jpg" width="100%">
+            <p>Se denomina deber o deberes a la responsabilidad de un individuo 
+                frente a otro, aunque este otro puede ser una persona física 
+                (un par) o una persona jurídica (empresa, organización), 
+                incluso el mismo Estado. El deber siempre es establecido 
+                de manera previa a contraer la responsabilidad, y espera 
+                del individuo una conducta o una acción que favorezca su
+                 cumplimiento. Caso contrario, existe en cualquier caso, 
+                 la sanción o castigo por haber incumplido dichas responsabilidades.</p>
+            <p>Ver página interna llamada. <a href="#valores">Regresar a valores</a></p>
+        </div>
+    <!-- /content -->
+
+    <!-- /footer -->
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+    <!-- /footer -->
+
+ </div>
+<!-- End of fourth page -->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+</body>
+
+</html>
