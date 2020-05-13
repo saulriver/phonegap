@@ -38,29 +38,29 @@
 
 </head>
 
-<body>
+<body class="ui-responsive-panel">
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <!-- Start of first page -->
- <div class="ui-page-theme-a jqm-demos ui-responsive-panel" data-role="page" id="page1">
+ <div class="ui-page-theme-a" data-role="page" id="page1">
 
     <!-- /header -->
         <div data-role="header">
             <h1>Bienvenidos</h1>
-            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+            <a class="ui-alt-icon" href="#nav-panel1" data-icon="bars" data-iconpos="notext">Menu</a>
         </div>
     <!-- /header -->
 
     <!-- /panel -->
-        <div data-role="panel" data-display="push" data-theme="a" id="nav-panel">
-            <ul data-role="listview">
-                <li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#valores">Valores</a></li>
-                <li><a href="#deberes">Deberes</a></li>
+        <div data-role="panel" data-display="push" data-theme="a" id="nav-panel1">
+            <ul class="ui-alt-icon" data-role="listview">
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br>
+                <li><a href="#inicio" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Inicio</a></li>
+                <li><a href="#valores" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Valores</a></li>
+                <li><a href="#deberes" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Deberes</a></li>
             </ul>
         </div>
-        <!-- /panel -->
+    <!-- /panel -->
 
     <!-- /content-->
         <div role="main" class="ui-content jqm-content jqm-fullwidth">
@@ -69,8 +69,10 @@
     <!-- /content -->
 
     <!-- /footer -->
-        <div data-role="footer">
-            <h4>Page Footer</h4>
+        <div class="ui-alt-icon" data-role="footer">
+            <h5>Visita este proyecto en GitHub.
+                <a href="https://github.com/saulriver/phonegap" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"></a>
+            </h5>
         </div>
     <!-- /footer -->
 
@@ -85,23 +87,38 @@
     <!-- /header -->
         <div data-role="header">
             <h1>Inicio</h1>
+            <a class="ui-alt-icon" href="#nav-panel2" data-icon="bars" data-iconpos="notext">Menu</a>
         </div>
     <!-- /header -->
 
-    <!-- /navbar -->
+    <!-- /panel -->
+        <div data-role="panel" data-display="push" data-theme="a" id="nav-panel2">
+            <ul class="ui-alt-icon" data-role="listview">
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
+                <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
+                <li><a href="#inicio" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Inicio</a></li>
+                <li><a href="#valores" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Valores</a></li>
+                <li><a href="#deberes" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Deberes</a></li>
+            </ul>
+        </div>
+    <!-- /panel -->
+
+    <!-- /navbar
         <div data-role="content">
             <ul data-role="listview">
                 <li><a href="#valores">Valores</a></li>
                 <li><a href="#deberes">Deberes</a></li>
             </ul>
         </div>
-    <!-- /navbar -->
+    /navbar -->
 
     <!-- /content-->
         <div role="main" class="ui-content">
-            <div class="article">
-                <p><img src="img/inicio.png" width="100%"></p>
-                <p>Del latín initium, inicio es un término que puede 
+            <img src="img/inicio.png" width="100%">
+
+            <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
+                 <h4>Definición</h4>
+                    <p>Del latín initium, inicio es un término que puede 
                     utilizarse como sinónimo de comienzo. 
                     Se trata del principio, el origen o la 
                     raíz de algo. Por ejemplo: “Esta inauguración 
@@ -110,14 +127,16 @@
                     italiano marcó el inicio de una pelea generalizada 
                     que dejó tres heridos”, “No estoy entendiendo nada: 
                     voy a tener que volver a leer desde el inicio”.</p>
-                <p>Ver página interna llamada. <a href="#page1">Pagina principal</a></p>
-            </div>
+            </div><br>
+            <a href="#page1">Pagina principal</a>
         </div>
     <!-- /content -->
 
     <!-- /footer -->
-        <div data-role="footer">
-            <h4>Page Footer</h4>
+        <div class="ui-alt-icon" data-role="footer">
+            <h5>Visita este proyecto en GitHub.
+                <a href="https://github.com/saulriver/phonegap" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"></a>
+            </h5>
         </div>
     <!-- /footer -->
 
@@ -132,32 +151,50 @@
     <!-- /header -->
         <div data-role="header">
             <h1>Valores</h1>
+            <a class="ui-alt-icon" href="#nav-panel3" data-icon="bars" data-iconpos="notext">Menu</a>
         </div>
     <!-- /header -->
 
-    <!-- /navbar -->
+    <!-- /panel -->
+        <div data-role="panel" data-display="push" data-theme="a" id="nav-panel3">
+            <ul class="ui-alt-icon" data-role="listview">
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
+                <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
+                <li><a href="#inicio" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Inicio</a></li>
+                <li><a href="#valores" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Valores</a></li>
+                <li><a href="#deberes" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Deberes</a></li>
+            </ul>
+        </div>
+    <!-- /panel -->
+
+    <!-- /navbar
         <div data-role="content">
             <ul data-role="listview">
                 <li><a href="#deberes">Deberes</a></li>
             </ul>
         </div>
-    <!-- /navbar -->
+    /navbar -->
 
     <!-- /content -->
         <div role="main" class="ui-content">
             <img src="img/valores.png" width="100%">
-            <p>Los valores son aquellos principios, virtudes o cualidades 
-                que caracterizan a una persona, una acción o un objeto 
-                que se consideran típicamente positivos o de gran 
-                importancia por un grupo social.
-            </p>
-            <p>Ver página interna llamada.<a href="#inicio">Regresar a inicio</a></p>
+
+            <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
+                 <h4>Definición</h4>
+                    <p>Los valores son aquellos principios, virtudes o cualidades 
+                    que caracterizan a una persona, una acción o un objeto 
+                    que se consideran típicamente positivos o de gran 
+                    importancia por un grupo social.</p>
+            </div><br>
+            <a href="#inicio">Regresar a inicio</a>
         </div>
     <!-- /content -->
 
     <!-- /footer -->
-        <div data-role="footer">
-            <h4>Page Footer</h4>
+        <div class="ui-alt-icon" data-role="footer">
+            <h5>Visita este proyecto en GitHub.
+                <a href="https://github.com/saulriver/phonegap" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"></a>
+            </h5>
         </div>
     <!-- /footer -->
 
@@ -172,21 +209,37 @@
     <!-- /header -->
         <div data-role="header">
             <h1>Deberes</h1>
+            <a class="ui-alt-icon" href="#nav-panel4" data-icon="bars" data-iconpos="notext">Menu</a>
         </div>
     <!-- /header -->
 
-    <!-- /navbar -->
+    <!-- /panel -->
+        <div data-role="panel" data-display="push" data-theme="a" id="nav-panel4">
+            <ul class="ui-alt-icon" data-role="listview">
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
+                <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
+                <li><a href="#inicio" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Inicio</a></li>
+                <li><a href="#valores" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Valores</a></li>
+                <li><a href="#deberes" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Deberes</a></li>
+            </ul>
+        </div>
+    <!-- /panel -->
+
+    <!-- /navbar
         <div data-role="content">
             <ul data-role="listview">
                 <li class="ui-icon-home ui-btn-icon-right"><a href="#page1">Pagina principal</a></li>
             </ul>
         </div>
-    <!-- /navbar -->
+    /navbar -->
 
     <!-- /content -->
         <div role="main" class="ui-content">
             <img src="img/deberes.jpg" width="100%">
-            <p>Se denomina deber o deberes a la responsabilidad de un individuo 
+
+            <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
+              <h4>Definición</h4>
+                <p>Se denomina deber o deberes a la responsabilidad de un individuo 
                 frente a otro, aunque este otro puede ser una persona física 
                 (un par) o una persona jurídica (empresa, organización), 
                 incluso el mismo Estado. El deber siempre es establecido 
@@ -194,13 +247,16 @@
                 del individuo una conducta o una acción que favorezca su
                  cumplimiento. Caso contrario, existe en cualquier caso, 
                  la sanción o castigo por haber incumplido dichas responsabilidades.</p>
-            <p>Ver página interna llamada. <a href="#valores">Regresar a valores</a></p>
+            </div><br>
+            <a href="#valores">Regresar a valores</a>
         </div>
     <!-- /content -->
 
     <!-- /footer -->
-        <div data-role="footer">
-            <h4>Page Footer</h4>
+        <div class="ui-alt-icon" data-role="footer">
+            <h5>Visita este proyecto en GitHub.
+                <a href="https://github.com/saulriver/phonegap" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline">User</a>
+            </h5>
         </div>
     <!-- /footer -->
 
