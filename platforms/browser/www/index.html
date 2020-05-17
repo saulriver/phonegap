@@ -39,7 +39,7 @@
 </head>
 
 <body class="ui-responsive-panel">
-<!--/////////////////////////////////////////1 pagina/////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////comienza 1 pagina/////////////////////////////////////////////////////////////////-->
 
 <!-- Start of first page -->
  <div class="ui-page-theme-a" data-role="page" id="page1">
@@ -52,6 +52,7 @@
                     <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                     <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
                     <li><a href="#page4" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Adicionales</a></li>
+                    <li><a href="#page5" data-rel="dialog" data-transition="pop" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Total de pedidos</a></li>
                 </ul>
             </div>
         <!-- /FIN panel -->
@@ -64,7 +65,7 @@
             
     <!-- /content-->
         <div role="main" class="jqm-content jqm-fullwidth">
-           <h1 style="position: fixed; top: 20%;">Disfruta nuestras deliciosas hamburguesas unicas.</h1> 
+           <h1 style="position: fixed; top: 20%;">Disfruta nuestras deliciosas hamburguesas unicas.</h1>
         </div>
     <!-- /FIN content -->
 
@@ -80,9 +81,7 @@
 <!-- /FIN footer -->
  </div>
 <!-- End of first page -->
-
-<!--/////////////////////////////////////////////2 pagina/////////////////////////////////////////////////////////////-->
-
+<!--/////////////////////////////////////////////comienza 2 pagina/////////////////////////////////////////////////////////////-->
 <!-- Start of second page -->
  <div class="ui-page-theme-a" data-role="page" id="page2">
 
@@ -101,6 +100,7 @@
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
                 <li><a href="#page4" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Adicionales</a></li>
+                <li><a href="#page5" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Total de pedidos</a></li>
             </ul>
         </div>
     <!-- /FIN panel -->
@@ -116,10 +116,29 @@
 
     <!-- /content-->
         <div data-role="content" role="main" class="ui-content">
+<!--/////////////////////////////////////////////BOTON DESPLEGABLE 1/////////////////////////////////////////////////////////////-->
     <!-- /BOTON content DESPLEGABLE-->
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
                 <h4>Hamburguesas saludables</h4>
                     <h3 style="text-align: left;">Disfruta del rico sabor de la segemos.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas hamburguesas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-37-a" id="checkbox-37-a">
+                                        <label for="checkbox-37-a">1</label>
+                                        <input type="checkbox" name="checkbox-38-a" id="checkbox-38-a">
+                                        <label for="checkbox-38-a">2</label>
+                                        <input type="checkbox" name="checkbox-39-a" id="checkbox-39-a">
+                                        <label for="checkbox-39-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:left; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Zanahoria.</li>
@@ -133,9 +152,27 @@
                                 <div data-role="popup" id="popup1" data-overlay-theme="a" data-theme="a" data-corners="false">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                     <img class="popphoto" src="img/1.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                                </div><br><br><br>
+                                </div><br><br><br><hr>
                         <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la sintrigal.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas hamburguesas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-40-a" id="checkbox-40-a">
+                                        <label for="checkbox-40-a">1</label>
+                                        <input type="checkbox" name="checkbox-41-a" id="checkbox-41-a">
+                                        <label for="checkbox-41-a">2</label>
+                                        <input type="checkbox" name="checkbox-42-a" id="checkbox-42-a">
+                                        <label for="checkbox-42-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:right; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Avena.</li>
@@ -149,9 +186,27 @@
                                 <div data-role="popup" id="popup2" data-overlay-theme="a" data-theme="a" data-corners="false">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                     <img class="popphoto" src="img/2.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                                </div><br><br><br>
+                                </div><br><br><br><hr>
                         <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la solume.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas hamburguesas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-43-a" id="checkbox-43-a">
+                                        <label for="checkbox-43-a">1</label>
+                                        <input type="checkbox" name="checkbox-44-a" id="checkbox-44-a">
+                                        <label for="checkbox-44-a">2</label>
+                                        <input type="checkbox" name="checkbox-45-a" id="checkbox-45-a">
+                                        <label for="checkbox-45-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                     <div style="float:left; margin:10px;">
                         <h4>Contenido:</h4>
                             <li>Gluten.</li>
@@ -167,15 +222,33 @@
                             <div data-role="popup" id="popup3" data-overlay-theme="a" data-theme="a" data-corners="false">
                                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                 <img class="popphoto" src="img/3.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                            </div><br><br><br><br>
+                            </div><br><br><br><br><hr>
                     <!-- /fin content imagen-->
             </div><br>
         <!-- /FIN BOTON content DESPLEGABLE-->
-
+<!--/////////////////////////////////////////////BOTON DESPLEGABLE 2/////////////////////////////////////////////////////////////-->
     <!-- /BOTON content DESPLEGABLE-->
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
                 <h4>Hamburguesas glotones</h4>
                     <h3 style="text-align: left;">Disfruta del rico sabor de la glotun.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas hamburguesas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-46-a" id="checkbox-46-a">
+                                        <label for="checkbox-46-a">1</label>
+                                        <input type="checkbox" name="checkbox-47-a" id="checkbox-47-a">
+                                        <label for="checkbox-47-a">2</label>
+                                        <input type="checkbox" name="checkbox-48-a" id="checkbox-48-a">
+                                        <label for="checkbox-48-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:left; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Zanahoria.</li>
@@ -189,9 +262,27 @@
                                 <div data-role="popup" id="popup4" data-overlay-theme="a" data-theme="a" data-corners="false">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                     <img class="popphoto" src="img/4.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                                </div><br><br><br>
+                                </div><br><br><br><hr>
                         <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la glosen.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas hamburguesas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-49-a" id="checkbox-49-a">
+                                        <label for="checkbox-49-a">1</label>
+                                        <input type="checkbox" name="checkbox-50-a" id="checkbox-50-a">
+                                        <label for="checkbox-50-a">2</label>
+                                        <input type="checkbox" name="checkbox-51-a" id="checkbox-51-a">
+                                        <label for="checkbox-51-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:right; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Avena.</li>
@@ -205,9 +296,27 @@
                                 <div data-role="popup" id="popup5" data-overlay-theme="a" data-theme="a" data-corners="false">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                     <img class="popphoto" src="img/5.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                                </div><br><br><br>
+                                </div><br><br><br><hr>
                         <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la grangler.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas hamburguesas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-52-a" id="checkbox-52-a">
+                                        <label for="checkbox-52-a">1</label>
+                                        <input type="checkbox" name="checkbox-53-a" id="checkbox-53-a">
+                                        <label for="checkbox-53-a">2</label>
+                                        <input type="checkbox" name="checkbox-54-a" id="checkbox-54-a">
+                                        <label for="checkbox-54-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                     <div style="float:left; margin:10px;">
                         <h4>Contenido:</h4>
                             <li>Gluten.</li>
@@ -221,10 +330,25 @@
                             <div data-role="popup" id="popup6" data-overlay-theme="a" data-theme="a" data-corners="false">
                                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                 <img class="popphoto" src="img/6.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                            </div><br><br>
+                            </div><br><br><hr>
                     <!-- /fin content imagen-->
-            </div><br>
+            </div><br><hr>
         <!-- /FIN BOTON content DESPLEGABLE-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!-- /boton popup-->
+            <a href="#popupDialog1" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left ui-btn-b">Realizar su orden de hamburguesas?</a>
+            <div data-role="popup" id="popupDialog1" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+                <div data-role="header" data-theme="a">
+                    <h1>Enviar orden</h1>
+                </div>
+                <div role="main" class="ui-content">
+                    <h3 class="ui-title">Esta seguro de realizar esta orden?</h3>
+                     <p>Esta acción no se puede deshacer.</p>
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancelar</a>
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Enviar</a>
+                </div>
+            </div>
+     <!-- /fin boton popup-->
             <!--LINK PARA NAVEGAR ENTRE PAGINAS <a href="#page1">Regresar</a>-->
         </div>
     <!-- /FIN content -->
@@ -239,9 +363,7 @@
 
  </div>
 <!-- End of second page -->
-
-<!--////////////////////////////////////////////3 pagina//////////////////////////////////////////////////////////////-->
-
+<!--////////////////////////////////////////////comienza 3 pagina//////////////////////////////////////////////////////////////-->
 <!-- Start of third page -->
  <div class="ui-page-theme-a" data-role="page" id="page3">
 
@@ -260,6 +382,7 @@
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
                 <li><a href="#page4" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Adicionales</a></li>
+                <li><a href="#page5" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Total de pedidos</a></li>
             </ul>
         </div>
     <!-- /FIN panel -->
@@ -274,10 +397,29 @@
 
     <!-- /content -->
         <div data-role="content" role="main" class="ui-content">
+<!--/////////////////////////////////////////////BOTON DESPLEGABLE 1/////////////////////////////////////////////////////////////-->
         <!-- /BOTON content desplegable -->
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
                 <h4>Bebidas saludables</h4>
                     <h3 style="text-align: left;">Disfruta del rico sabor de la segemos.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas bebidas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-1-a" id="checkbox-1-a">
+                                        <label for="checkbox-1-a">1</label>
+                                        <input type="checkbox" name="checkbox-2-a" id="checkbox-2-a">
+                                        <label for="checkbox-2-a">2</label>
+                                        <input type="checkbox" name="checkbox-3-a" id="checkbox-3-a">
+                                        <label for="checkbox-3-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:left; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Zanahoria.</li>
@@ -291,9 +433,27 @@
                                 <div data-role="popup" id="popup7" data-overlay-theme="a" data-theme="a" data-corners="false">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                     <img class="popphoto" src="img/7.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                                </div><br><br><br>
+                                </div><br><br><br><hr>
                         <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la sintrigal.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas bebidas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-4-a" id="checkbox-4-a">
+                                        <label for="checkbox-4-a">1</label>
+                                        <input type="checkbox" name="checkbox-5-a" id="checkbox-5-a">
+                                        <label for="checkbox-5-a">2</label>
+                                        <input type="checkbox" name="checkbox-6-a" id="checkbox-6-a">
+                                        <label for="checkbox-6-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:right; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Avena.</li>
@@ -307,9 +467,27 @@
                                 <div data-role="popup" id="popup8" data-overlay-theme="a" data-theme="a" data-corners="false">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                     <img class="popphoto" src="img/8.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                                </div><br><br><br>
+                                </div><br><br><br><hr>
                         <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la solume.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas bebidas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-7-a" id="checkbox-7-a">
+                                        <label for="checkbox-7-a">1</label>
+                                        <input type="checkbox" name="checkbox-8-a" id="checkbox-8-a">
+                                        <label for="checkbox-8-a">2</label>
+                                        <input type="checkbox" name="checkbox-9-a" id="checkbox-9-a">
+                                        <label for="checkbox-9-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                     <div style="float:left; margin:10px;">
                         <h4>Contenido:</h4>
                             <li>Gluten.</li>
@@ -325,15 +503,33 @@
                             <div data-role="popup" id="popup9" data-overlay-theme="a" data-theme="a" data-corners="false">
                                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                 <img class="popphoto" src="img/9.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                            </div><br><br><br><br><br>
+                            </div><br><br><br><br><br><hr>
                     <!-- /fin content imagen-->
             </div><br>
         <!-- /FIN BOTON content desplegable -->
-
+<!--/////////////////////////////////////////////BOTON DESPLEGABLE 2/////////////////////////////////////////////////////////////-->
         <!-- /BOTON content desplegable -->
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
                 <h4>Bebidas glotones</h4>
                     <h3 style="text-align: left;">Disfruta del rico sabor de la glotun.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas bebidas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-10-a" id="checkbox-10-a">
+                                        <label for="checkbox-10-a">1</label>
+                                        <input type="checkbox" name="checkbox-11-a" id="checkbox-11-a">
+                                        <label for="checkbox-11-a">2</label>
+                                        <input type="checkbox" name="checkbox-12-a" id="checkbox-12-a">
+                                        <label for="checkbox-12-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:left; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Zanahoria.</li>
@@ -347,9 +543,27 @@
                                 <div data-role="popup" id="popup10" data-overlay-theme="a" data-theme="a" data-corners="false">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                     <img class="popphoto" src="img/10.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                                </div><br><br><br>
+                                </div><br><br><br><hr>
                         <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la glosen.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas bebidas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-13-a" id="checkbox-13-a">
+                                        <label for="checkbox-13-a">1</label>
+                                        <input type="checkbox" name="checkbox-14-a" id="checkbox-14-a">
+                                        <label for="checkbox-14-a">2</label>
+                                        <input type="checkbox" name="checkbox-15-a" id="checkbox-15-a">
+                                        <label for="checkbox-15-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:right; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Avena.</li>
@@ -363,9 +577,27 @@
                                 <div data-role="popup" id="popup11" data-overlay-theme="a" data-theme="a" data-corners="false">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                     <img class="popphoto" src="img/11.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                                </div><br><br><br>
+                                </div><br><br><br><hr>
                         <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la grangler.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas bebidas desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-16-a" id="checkbox-16-a">
+                                        <label for="checkbox-16-a">1</label>
+                                        <input type="checkbox" name="checkbox-17-a" id="checkbox-17-a">
+                                        <label for="checkbox-17-a">2</label>
+                                        <input type="checkbox" name="checkbox-18-a" id="checkbox-18-a">
+                                        <label for="checkbox-18-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:left; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Gluten.</li>
@@ -373,16 +605,31 @@
                                 <li>tofu.</li>
                                 <b>Precio: $25.000</b>
                         </div><br><br>
-                    <!-- /content imagen-->
+                    <!-- /popup content imagen-->
                         <a href="#popup12" data-rel="popup" data-position-to="window" data-transition="fade">
                             <img class="popphoto" src="img/12.jpg" alt="Hamburguesas,Deliciaya" style="width:50%"></a>
                             <div data-role="popup" id="popup12" data-overlay-theme="a" data-theme="a" data-corners="false">
                                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                 <img class="popphoto" src="img/12.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                            </div><br><br>
-                    <!-- /fin content imagen-->
-            </div><br>
+                            </div><br><br><hr>
+                    <!-- /fin popup content imagen-->
+            </div><br><hr>
         <!-- /FIN BOTON content desplegable-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!-- /boton popup-->
+            <a href="#popupDialog2" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left ui-btn-b">Realizar su orden de bebidas?</a>
+                <div data-role="popup" id="popupDialog2" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+                    <div data-role="header" data-theme="a">
+                        <h1>Enviar orden</h1>
+                    </div>
+                    <div role="main" class="ui-content">
+                        <h3 class="ui-title">Esta seguro de realizar esta orden?</h3>
+                         <p>Esta acción no se puede deshacer.</p>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancelar</a>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Enviar</a>
+                    </div>
+                </div>
+         <!-- /fin boton popup-->
             <!--LINK PARA NAVEGAR ENTRE PAGINAS <a href="#page2">Regresar</a>-->
         </div>
     <!-- /FIN content -->
@@ -397,9 +644,7 @@
 
  </div>
 <!-- End of third page -->
-
-<!--/////////////////////////////////////////////4 pagina/////////////////////////////////////////////////////////////-->
-
+<!--/////////////////////////////////////////////comienza 4 pagina/////////////////////////////////////////////////////////////-->
 <!-- Start of fourth page -->
  <div class="ui-page-theme-a" data-role="page" id="page4">
 
@@ -418,6 +663,7 @@
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
                 <li><a href="#page4" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Adicionales</a></li>
+                <li><a href="#page5" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Total de pedidos</a></li>
             </ul>
         </div>
     <!-- /FIN panel -->
@@ -432,10 +678,29 @@
 
     <!-- /content -->
         <div data-role="content" role="main" class="ui-content">
+<!--///////////////////////////////////////BOTON DESPLEGABLE 1///////////////////////////////////////////////////////////////////-->
         <!-- /BOTON content desplegable-->
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
                 <h4>Adicionales saludables</h4>
                     <h3 style="text-align: left;">Disfruta del rico sabor de la segemos.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas adicionales desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-19-a" id="checkbox-19-a">
+                                        <label for="checkbox-19-a">1</label>
+                                        <input type="checkbox" name="checkbox-20-a" id="checkbox-20-a">
+                                        <label for="checkbox-20-a">2</label>
+                                        <input type="checkbox" name="checkbox-21-a" id="checkbox-21-a">
+                                        <label for="checkbox-21-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:left; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Zanahoria.</li>
@@ -449,9 +714,27 @@
                             <div data-role="popup" id="popup13" data-overlay-theme="a" data-theme="a" data-corners="false">
                                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                 <img class="popphoto" src="img/13.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                            </div><br><br><br>
+                            </div><br><br><br><hr>
                     <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la sintrigal.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas adicionales desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-22-a" id="checkbox-22-a">
+                                        <label for="checkbox-22-a">1</label>
+                                        <input type="checkbox" name="checkbox-23-a" id="checkbox-23-a">
+                                        <label for="checkbox-23-a">2</label>
+                                        <input type="checkbox" name="checkbox-24-a" id="checkbox-24-a">
+                                        <label for="checkbox-24-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:right; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Avena.</li>
@@ -459,15 +742,33 @@
                                 <li>Cereal.</li>
                                 <b>Precio: $15.000</b>
                         </div><br><br>
-                        <!-- /content imagen-->
+                    <!-- /content imagen-->
                         <a href="#popup14" data-rel="popup" data-position-to="window" data-transition="fade">
                             <img class="popphoto" src="img/14.jpg" alt="Hamburguesas,Deliciaya" style="width:50%"></a>
                             <div data-role="popup" id="popup14" data-overlay-theme="a" data-theme="a" data-corners="false">
                                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                 <img class="popphoto" src="img/14.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                            </div><br><br><br>
+                            </div><br><br><br><hr>
                     <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la solume.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas adicionales desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-25-a" id="checkbox-25-a">
+                                        <label for="checkbox-25-a">1</label>
+                                        <input type="checkbox" name="checkbox-26-a" id="checkbox-26-a">
+                                        <label for="checkbox-26-a">2</label>
+                                        <input type="checkbox" name="checkbox-27-a" id="checkbox-27-a">
+                                        <label for="checkbox-27-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                     <div style="float:left; margin:10px;">
                         <h4>Contenido:</h4>
                             <li>Gluten.</li>
@@ -483,15 +784,33 @@
                         <div data-role="popup" id="popup15" data-overlay-theme="a" data-theme="a" data-corners="false">
                             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                             <img class="popphoto" src="img/15.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                        </div><br><br><br><br>
+                        </div><br><br><br><br><hr>
                 <!-- /fin content imagen-->
             </div><br>
     <!-- / FIN BOTON content desplegable-->
-
+<!--////////////////////////////////////////////BOTON DESPLEGABLE 2//////////////////////////////////////////////////////////////-->
     <!-- /BOTON content desplegable-->
             <div data-role="collapsible" class="ui-nodisc-icon ui-alt-icon">
                 <h4>Adicionales glotones</h4>
                     <h3 style="text-align: left;">Disfruta del rico sabor de la glotun.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas adicionales desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-28-a" id="checkbox-28-a">
+                                        <label for="checkbox-28-a">1</label>
+                                        <input type="checkbox" name="checkbox-29-a" id="checkbox-29-a">
+                                        <label for="checkbox-29-a">2</label>
+                                        <input type="checkbox" name="checkbox-30-a" id="checkbox-30-a">
+                                        <label for="checkbox-30-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:left; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Zanahoria.</li>
@@ -505,9 +824,27 @@
                             <div data-role="popup" id="popup16" data-overlay-theme="a" data-theme="a" data-corners="false">
                                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                 <img class="popphoto" src="img/16.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                            </div><br><br><br>
+                            </div><br><br><br><hr>
                     <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la glosen.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas adicionales desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-31-a" id="checkbox-31-a">
+                                        <label for="checkbox-31-a">1</label>
+                                        <input type="checkbox" name="checkbox-32-a" id="checkbox-32-a">
+                                        <label for="checkbox-32-a">2</label>
+                                        <input type="checkbox" name="checkbox-33-a" id="checkbox-33-a">
+                                        <label for="checkbox-33-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                         <div style="float:right; margin:10px;">
                             <h4>Contenido:</h4>
                                 <li>Avena.</li>
@@ -521,9 +858,27 @@
                             <div data-role="popup" id="popup17" data-overlay-theme="a" data-theme="a" data-corners="false">
                                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                                 <img class="popphoto" src="img/17.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                            </div><br><br><br>
+                            </div><br><br><br><hr>
                     <!-- /fin content imagen-->
                     <h3 style="text-align: left;">Disfruta del rico sabor de la grangler.</h3>
+                    <!-- /BOTON content desplegable checkbox-->
+                        <form>
+                            <fieldset data-role="collapsible">
+                                <legend>Cuantas vas a pedir</legend>
+                                    <label for="textinput-f">Observaciones:</label>
+                                    <input type="text" name="textinput-f" id="textinput-f" placeholder="Describe tu observación..." value="">
+                                    <label for="textinput-f">Cuantas adicionales desea:</label>
+                                    <div data-role="controlgroup">
+                                        <input type="checkbox" name="checkbox-34-a" id="checkbox-34-a">
+                                        <label for="checkbox-34-a">1</label>
+                                        <input type="checkbox" name="checkbox-35-a" id="checkbox-35-a">
+                                        <label for="checkbox-35-a">2</label>
+                                        <input type="checkbox" name="checkbox-36-a" id="checkbox-36-a">
+                                        <label for="checkbox-36-a">3</label>
+                                    </div>
+                             </fieldset>
+                        </form>
+                    <!-- /fin BOTON content desplegable checkbox-->
                     <div style="float:left; margin:10px;">
                         <h4>Contenido:</h4>
                             <li>Gluten.</li>
@@ -537,10 +892,25 @@
                         <div data-role="popup" id="popup18" data-overlay-theme="a" data-theme="a" data-corners="false">
                             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                             <img class="popphoto" src="img/18.jpg" style="max-height:512px;" alt="Hamburguesas,Deliciaya">
-                        </div><br><br><br>
+                        </div><br><br><br><hr>
                 <!-- /fin content imagen-->
-            </div><br>
+            </div><br><hr>
             <!-- /FIN BOTON content desplegable-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!-- /boton popup-->
+            <a href="#popupDialog3" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left ui-btn-b">Realizar su orden de adicionales?</a>
+            <div data-role="popup" id="popupDialog3" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+                <div data-role="header" data-theme="a">
+                    <h1>Enviar orden</h1>
+                </div>
+                <div role="main" class="ui-content">
+                    <h3 class="ui-title">Esta seguro de realizar esta orden?</h3>
+                     <p>Esta acción no se puede deshacer.</p>
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancelar</a>
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Enviar</a>
+                </div>
+            </div>
+     <!-- /fin boton popup-->
             <!--LINK PARA NAVEGAR ENTRE PAGINAS <a href="#page3">Regresar</a>-->
         </div>
     <!-- /FIN content -->
@@ -555,7 +925,29 @@
 
  </div>
 <!-- End of fourth page -->
+<!--//////////////////////////////////////////comienzo 5 pagina////////////////////////////////////////////////////////////////-->
+<div class="ui-page-theme-a" data-role="page" id="page5">
 
+    <!-- /header -->
+        <div data-role="header" data-position="fixed">
+            <h1>Total del pedido</h1>
+        </div>
+    <!-- /FIN header -->
+
+    <!-- /content-->
+        <div data-role="content" role="main" class="ui-content">
+            <article>
+                <section>
+                    <p>
+                        Aqui se visualizara el pedido total de los productos escogidos. Proximamente
+                    </p>
+                </section>
+            </article>
+        </div>
+    <!-- /FIN content -->
+
+ </div>
+<!-- End of five page -->
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
