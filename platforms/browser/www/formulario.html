@@ -35,23 +35,50 @@
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <title>Deliciaya.com</title>
-    <style>
-    #irarriba{
-        background:#76aadb;
-        bottom:0px;
-        display: block;
-        height: 50px;
-        position: fixed;
-        right:0px;
-        width:50px;
-    }</style>
+
 </head>
 
 <body class="ui-responsive-panel">
 
+    <div class="ui-page-theme-a" data-role="page" id="formulario">
+    <!-- /header -->
+        <div data-role="header" >
+            <img style="position: fixed;" src="img/titulo.jpg" background="backbround-size:cover;" width="100%" height="100%">
+        </div>
+    <!-- /FIN header -->
+
+    <!-- /Form -->
+    <form action="index.html" method="GET">
+        <div data-role="fieldcontain">
+            <label for="usuario" style="color:black;" ><b>Usuario:</b></label>
+            <input type="text" name="usuario" id="usuario" value="">
+        </div>
+
+        <div data-role="fieldcontain">
+            <label for="email" style="color:black;"><b>Correo electrónico:</b></label>
+            <input type="email" name="email" id="email" value="">
+        </div> 
+
+        <div data-role="fieldcontain">
+            <label for="password" style="color:black;"><b>Contraseña:</b></label>
+            <input type="password" name="password" id="password" value="">
+        </div> 
+            <input type="submit" data-inline="true" id="submit" value="Enviar">
+            
+        
+    </form>
+    <!-- /Form -->
+
+        <!-- /footer -->
+        <div class="ui-alt-icon" data-role="footer" data-position="fixed">
+            <h4>Formulario de ingreso</h4>
+        </div>
+        <!-- /FIN footer -->
+    </div>
+
 <!--/////////////////////////////////////////comienza 1 pagina/////////////////////////////////////////////////////////////////-->
 <!-- Start of first page -->
- <div class="ui-page-theme-a" data-role="page" id="page1">
+<div class="ui-page-theme-a" data-role="page" id="page1">
     
     <!-- /panel -->
     <div data-role="panel" data-display="push" data-theme="a" id="nav-panel1">
@@ -105,8 +132,7 @@
     <!-- /panel -->
         <div data-role="panel" data-display="push" data-theme="a" id="nav-panel2">
             <ul class="ui-alt-icon" data-role="listview">
-                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a>
-        <h1 style="position:absolute; top:0px; margin-left:56px;">Mesa #1</h1><br><br><br>
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
@@ -407,8 +433,7 @@
     <!-- /panel -->
         <div data-role="panel" data-display="push" data-theme="a" id="nav-panel3">
             <ul class="ui-alt-icon" data-role="listview">
-                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a>
-        <h1 style="position:absolute; top:0px; margin-left:56px;">Mesa #1</h1><br><br><br>
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
@@ -660,8 +685,7 @@
     <!-- /panel -->
         <div data-role="panel" data-display="push" data-theme="a" id="nav-panel4">
             <ul class="ui-alt-icon" data-role="listview">
-                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a>
-    <h1 style="position:absolute; top:0px; margin-left:56px;">Mesa #1</h1><br><br><br>
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
@@ -972,20 +996,10 @@
  </div>
 <!-- End of five page -->
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">app.initialize();</script>
-    <script>
-    $(function(){
-        
-        $("#irarriba a").on("click", function(e){
-            e.preventDefault();
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000); 
-        });
-    });
-    </script>
 </body>
 
 </html>
