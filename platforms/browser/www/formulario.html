@@ -36,6 +36,94 @@
 
     <title>Deliciaya.com</title>
 
+    <style>
+    #irarriba1{
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: rgb(255, 60, 0);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 12px;
+    }    
+    #irarriba2
+    {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: rgb(255, 60, 0);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    #irarriba3
+    {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: rgb(255, 60, 0);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    #pLogin
+    {
+        position: absolute; 
+        font-size:25px; 
+        text-align: center; 
+        font-family:fantasy; 
+        color:darkslategray; 
+        border-radius: 12px; 
+        margin-top: auto;
+    }
+    #fechahoy
+    {
+        font-size:23px;
+        background-color: #00ccff4d;
+        color:rgba(243, 238, 236, 0.932);
+        margin-top: 15%;
+        position: sticky;
+        border-radius: 11px;
+        text-align: center;
+    }    
+    #reloj
+    {
+        font-size:30px;
+        background-color: #00ccff4d;
+        color:rgba(243, 238, 236, 0.932);
+        margin-top: 5%;
+        position: sticky;
+        border-radius: 11px;
+        text-align: center;
+    }
+    h1
+    {
+        font-size:30px;
+        background-color: rgba(255, 153, 0, 0.781);
+        border-radius: 11px;
+    }
+    h5
+    {
+        background-color: rgba(255, 153, 0, 0.781);
+        border-radius: 56px;
+    }
+    </style>
+
 </head>
 
 <body class="ui-responsive-panel">
@@ -47,25 +135,36 @@
         </div>
     <!-- /FIN header -->
 
+    <!-- /content-->
+    <div data-role="content" role="main" class="ui-content">
+        <article>
+            <section>
+                <p id="pLogin">
+                   <b>Logeate para ingresar a nuestra app</b>
+                </p>
+            </section>
+        </article>
+    </div>
+<!-- /FIN content -->
+<br/><br/><br/>
     <!-- /Form -->
     <form action="index.html" method="GET">
         <div data-role="fieldcontain">
-            <label for="usuario" style="color:black;" ><b>Usuario:</b></label>
+            <label for="usuario" style="color:darkslategray;"><b>Usuario:</b></label>
             <input type="text" name="usuario" id="usuario" value="">
         </div>
 
         <div data-role="fieldcontain">
-            <label for="email" style="color:black;"><b>Correo electrónico:</b></label>
+            <label for="email" style="color:darkslategray;"><b>Correo electrónico:</b></label>
             <input type="email" name="email" id="email" value="">
         </div> 
 
         <div data-role="fieldcontain">
-            <label for="password" style="color:black;"><b>Contraseña:</b></label>
+            <label for="password" style="color:darkslategray;"><b>Contraseña:</b></label>
             <input type="password" name="password" id="password" value="">
         </div> 
             <input type="submit" data-inline="true" id="submit" value="Enviar">
-            
-        
+                
     </form>
     <!-- /Form -->
 
@@ -96,12 +195,17 @@
         
     <!-- /header -->
         <div data-role="header">
-            <img style="position: fixed;" src="img/hamburger.jpg" background="backbround-size:cover;" width="100%" height="100%">
+            <img style="position: fixed;" src="img/hamburger.jpg" background="background-size:cover;" width="100%" height="100%">
             <a class="ui-alt-icon" href="#nav-panel1" data-icon="bars" data-iconpos="notext">Menu</a>
             <h1 style="position:absolute; top:0px; margin-left:56px;">Bienvenidos a Deliciaya.com</h1>
-            
+            <!-- /fecha y reloj pagina principal -->
+            <div data-role="content" role="main" class="ui-content" id="fechahoy"></div>
+            <div id="reloj"></div> 
+            <!-- /Fin fecha y reloj pagina principal -->
+
     <!-- /content
         <div role="main" class="jqm-content jqm-fullwidth">
+            <div id="fechahoy"></div>
             <img style="position: fixed;" src="img/titulo.jpg" background="backbround-size:cover;" width="100%" height="100%">
         </div>
     /FIN content -->
@@ -132,7 +236,8 @@
     <!-- /panel -->
         <div data-role="panel" data-display="push" data-theme="a" id="nav-panel2">
             <ul class="ui-alt-icon" data-role="listview">
-                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a>
+                <h1 style="position:absolute; top:0px; margin-left:56px;">Mesa #1</h1><br><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
@@ -401,7 +506,7 @@
                     <h3 class="ui-title">Esta seguro de realizar esta orden?</h3>
                      <p>Esta acción no se puede deshacer.</p>
                     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancelar</a>
-                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Enviar</a>
+                    <a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" type="submit" data-rel="submit" data-transition="flow">Enviar</a>
                 </div>
             </div>
      <!-- /fin boton popup-->
@@ -411,6 +516,11 @@
 
     <!-- /footer -->
         <div class="ui-alt-icon" data-role="footer" data-position="fixed">
+            <!-- /boton top pagina-->
+            <div id="irarriba1" onclick="topFunction()">
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-u ui-btn-icon-notext">Subir</a>
+            </div>
+            <!-- /FIN boton top pagina-->
             <h5>Visita este proyecto en GitHub.
                 <a href="https://github.com/saulriver/phonegap" target="_blank" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"></a>
             </h5>
@@ -433,7 +543,8 @@
     <!-- /panel -->
         <div data-role="panel" data-display="push" data-theme="a" id="nav-panel3">
             <ul class="ui-alt-icon" data-role="listview">
-                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a>
+        <h1 style="position:absolute; top:0px; margin-left:56px;">Mesa #1</h1><br><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
@@ -653,7 +764,7 @@
                         <h3 class="ui-title">Esta seguro de realizar esta orden?</h3>
                          <p>Esta acción no se puede deshacer.</p>
                         <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancelar</a>
-                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Enviar</a>
+                        <a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" type="submit" data-rel="submit" data-transition="flow">Enviar</a>
                     </div>
                 </div>
          <!-- /fin boton popup-->
@@ -663,6 +774,11 @@
 
     <!-- /footer -->
         <div class="ui-alt-icon" data-role="footer" data-position="fixed">
+            <!-- /boton top pagina-->
+            <div id="irarriba2" onclick="topFunction()">
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-u ui-btn-icon-notext">Subir</a>
+            </div>
+            <!-- /FIN boton top pagina-->
             <h5>Visita este proyecto en GitHub.
                 <a href="https://github.com/saulriver/phonegap" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"></a>
             </h5>
@@ -685,7 +801,8 @@
     <!-- /panel -->
         <div data-role="panel" data-display="push" data-theme="a" id="nav-panel4">
             <ul class="ui-alt-icon" data-role="listview">
-                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a><br><br>
+                <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left"></a>
+    <h1 style="position:absolute; top:0px; margin-left:56px;">Mesa #1</h1><br><br><br>
                 <li><a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Bienvenidos</a></li>
                 <li><a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Hamburguesas</a></li>
                 <li><a href="#page3" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-eye">Bebidas</a></li>
@@ -944,26 +1061,32 @@
             <!-- /FIN BOTON content desplegable-->
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <!-- /boton popup-->
-            <a href="#popupDialog3" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left ui-btn-b">Realizar su orden de adicionales?</a>
+        <a href="#popupDialog3" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left ui-btn-b">Realizar su orden de adicionales?</a>
             <div data-role="popup" id="popupDialog3" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
                 <div data-role="header" data-theme="a">
                     <h1>Enviar orden</h1>
                 </div>
-                <div role="main" class="ui-content">
-                    <h3 class="ui-title">Esta seguro de realizar esta orden?</h3>
-                     <p>Esta acción no se puede deshacer.</p>
-                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancelar</a>
-                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Enviar</a>
-                </div>
+                <form action="index.html" method="GET">
+                    <div role="main" class="ui-content">
+                        <h3 class="ui-title">Esta seguro de realizar esta orden?</h3>
+                         <p>Esta acción no se puede deshacer.</p>
+                        <a href="#page4" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancelar</a>
+                        <a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" type="submit" data-rel="submit" data-transition="flow">Enviar</a>
+                    </div>
+                </form>
             </div>
      <!-- /fin boton popup-->
             <!--LINK PARA NAVEGAR ENTRE PAGINAS <a href="#page3">Regresar</a>-->
-            <div id="irarriba" style="position: sticky;"><a href="#">Ir arriba</a></div>
         </div>
     <!-- /FIN content -->
 
     <!-- /footer -->
         <div class="ui-alt-icon" data-role="footer" data-position="fixed">
+            <!-- /boton top pagina-->
+            <div id="irarriba3" onclick="topFunction()">
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-u ui-btn-icon-notext">Subir</a>
+            </div>
+            <!-- /FIN boton top pagina-->
             <h5>Visita este proyecto en GitHub.
                 <a href="https://github.com/saulriver/phonegap" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline">User</a>
             </h5>
@@ -997,9 +1120,9 @@
 <!-- End of five page -->
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-<script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript">app.initialize();</script>
-</body>
 
+</body>
 </html>
